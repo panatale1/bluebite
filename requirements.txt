@@ -17,6 +17,7 @@ django-superform
 enum34==1.1.6
 ipython==5.3.0
 ipython-genutils==0.2.0
+jsonschema
 markdown
 packaging==16.8
 pathlib2==2.2.1
