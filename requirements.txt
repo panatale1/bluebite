@@ -8,7 +8,7 @@ django-bootstrap-toolkit==2.15.0
 django-ckeditor
 django-compressor==2.1.1
 django-extensions==1.7.8
-django-filter
+django-filter==1.1
 django-intl-tel-input
 django-localflavor
 django-phonenumber-field

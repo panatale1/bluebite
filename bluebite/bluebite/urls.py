@@ -16,6 +16,17 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from rest_framework.urlpatterns import format_suffix_patterns
+
+from .views import VendorListView, TagListView
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
+
+api_urls = [
+    url(r'^api/vendors/', VendorListView.as_view()),
+    url(r'^api/tags/', TagListView.as_view()),
+]
+
+urlpatterns += format_suffix_patterns(api_urls)
